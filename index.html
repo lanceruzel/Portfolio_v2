@@ -49,7 +49,7 @@
     <section class="w-screen md:h-[calc(100vh-80px)] relative">
         <div class="bg absolute w-full h-full -z-10"></div>
 
-        <div class="container mx-auto h-full px-5 flex max-md:flex-col max-md:gap-10 items-center justify-center pb-20">
+        <div class="container mx-auto h-full px-5 flex max-md:flex-col max-md:gap-10 items-center justify-center">
             <!-- Right Side -->
             <div class="!w-full max-md:text-center">
                 <div class="flex items-center max-md:justify-center gap-2 max-md:pt-10">
@@ -60,30 +60,15 @@
                 <p class="text-4xl font-bold">I’m <span class="text-secondary font-extrabold text-5xl">Lance Ruzel Ambrocio</span> a Fullstack Web Developer. <span class="-ms-2 animate-pulse text-gray-400">|</span></p>
                 <p class="text-2xl mt-3 font-medium">Dedicated to crafting dynamic, user-friendly, and innovative websites. I specialize in creating responsive designs and efficient backend systems to deliver impactful digital experiences.</p>
             
-                <div class="flex items-center justify-center md:justify-start gap-3">
-                    <button class="transition-all px-10 py-2.5 font-semibold bg-primary text-white hover:bg-secondary rounded-md mt-5">
+                <div class="flex items-center justify-center md:justify-start gap-3 mt-5">
+                    <button class="transition-all px-10 py-2.5 font-medium bg-primary text-white hover:bg-secondary rounded-md">
                         Projects
                     </button>
 
-                    <button class="transition-all px-10 py-2 font-semibold outline outline-primary text-primary hover:bg-secondary hover:outline-secondary hover:text-white rounded-md mt-5">
+                    <button class="transition-all px-10 py-2 font-medium outline outline-primary text-primary hover:bg-secondary hover:outline-secondary hover:text-white rounded-md">
                         Linkedin
                     </button>
                 </div>
-
-                <!-- Socials -->
-                <!-- <div class="flex items-center max-md:justify-center justify-start gap-5 mt-5">
-                    <a href="#" class="transition-all hover:scale-110">
-                        <img src="./assets/icons/linkedin.svg" class="size-8" alt="">
-                    </a>
-
-                    <a href="#" class="transition-all hover:scale-110">
-                        <img src="./assets/icons/facebook.svg" class="size-8" alt="">
-                    </a>
-
-                    <a href="#" class="transition-all hover:scale-110">
-                        <img src="./assets/icons/github.svg" class="size-9" alt="">
-                    </a>
-                </div> -->
             </div>
 
             <!-- Left Side -->
@@ -144,10 +129,10 @@
     </section>
 
     <!-- About Me Section -->
-    <section class="w-screen md:h-[calc(100vh-80px)] relative">
+    <section class="w-screen h-full relative">
         <div class="bg absolute w-full h-full -z-10"></div>
 
-        <div class="container mx-auto h-full px-5 flex flex-col max-md:gap-10 items-center justify-start pb-20">
+        <div class="container mx-auto h-full px-5 flex flex-col max-md:gap-10 items-center justify-start py-10">
             <!-- Header -->
             <div class="flex items-center justify-center relative">
                 <span class="absolute top-[1.1rem] -left-1 w-12 h-1 rounded-sm bg-gray-700"></span>
@@ -161,14 +146,186 @@
             </div>
 
             <!-- Content -->
-            <div>
+            <div class="flex max-md:flex-col items-center justify-center gap-10 lg:gap-16">
                 <!-- Left Side -->
-                <div>
-                    <img src="./assets/hero-dp.png" alt="" class="h-[700px]">
+                <div class="relative lg:mt-10">
+                    <img src="./assets/IMG_3962.JPG" alt="" class="shadow-lg rounded z-[100] object-cover h-[380px] min-h-[380px] w-[380px] min-w-[380px]">
+                    <div class="shadow-lg rounded -z-10 absolute -top-5 right-5 bg-secondary h-[380px] min-h-[380px] w-[380px] min-w-[380px]"></div>
+                    <div class="shadow-lg rounded -z-10 absolute -bottom-5 -right-5 bg-tartiary h-[380px] min-h-[380px] w-[380px] min-w-[380px]"></div>
                 </div>
 
-                <div>
+                <div class="md:mt-5">
+                    <p class="text-xl max-md:text-center">
+                        I’m a passionate web developer with a strong focus on the TALL stack (Tailwind, AlpineJS, Laravel, Livewire) and Vue.js. 
+                        I thrive on the challenge of fixing bugs and errors, ensuring seamless functionality and optimal performance in every project. 
+                        My expertise spans PHP, MySQL, and JavaScript, and I enjoy integrating third-party APIs to enhance application features and user experience. 
+                        Driven by curiosity and a commitment to growth, I continuously expand my skills to craft innovative, user-focused digital solutions that make a meaningful impact.
+                    </p>
                     
+                    <div class="flex items-center justify-start max-md:justify-center md:flex-col md:items-stretch lg:flex-row lg:items-center gap-3 mt-3">
+                        <button class="transition-all px-10 py-2.5 font-medium bg-primary text-white hover:bg-blue-900 rounded-md">
+                            Hire Me
+                        </button>
+
+                        <button class="flex items-center justify-center gap-3 transition-all px-10 py-2 font-medium outline outline-primary text-primary hover:bg-secondary hover:outline-secondary hover:text-white rounded-md">
+                            <svg class="feather feather-download" fill="none" height="24" stroke="currentColor"
+                                stroke-linecap="round" stroke-linejoin="round" stroke-width="2.3" viewBox="0 0 24 24" width="24"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+                                <polyline points="7 10 12 15 17 10" />
+                                <line x1="12" x2="12" y1="15" y2="3" />
+                            </svg>
+                            
+                            <span>Download CV</span>
+                        </button>
+                    </div>
+
+                    <!-- Socials -->
+                    <div class="flex items-center max-md:justify-center justify-start gap-5 mt-5">
+                        <a href="#" class="transition-all hover:scale-110">
+                            <img src="./assets/icons/linkedin.svg" class="size-8" alt="">
+                        </a>
+
+                        <a href="#" class="transition-all hover:scale-110">
+                            <img src="./assets/icons/facebook.svg" class="size-8" alt="">
+                        </a>
+
+                        <a href="#" class="transition-all hover:scale-110">
+                            <img src="./assets/icons/github.svg" class="size-9" alt="">
+                        </a>
+                    </div>
+
+                    <!-- Certificates -->
+                    <!-- <div class="flex flex-col items-center justify-center mt-5" x-data="{ activeSlide: 0 }">
+                        <div class="w-full max-w-[55em] overflow-hidden pb-5">
+                            <div class="flex gap-4 transition-transform duration-1000 ease-in-out" 
+                                x-bind:style="{ transform: `translateX(-${activeSlide * 33.3333}%)` }">
+        
+                                <div class="flex-shrink-0 w-[17.5em] rounded-lg shadow-md bg-tartiary">
+                                    <img src="./assets/certificates/Cert2667401288-1.jpg" alt="Product Design" class="w-full rounded-t-lg">
+        
+                                    <div class="px-5 py-7 text-center rounded-b-lg">
+                                        <p class="text-primary text-lg font-semibold">ITS - Network Security</p>
+                                        <small class="text-gray-700 italic">Issuer: Certiport</small>
+                                    </div>
+                                </div>
+        
+                                <div class="flex-shrink-0 w-[17.5em] rounded-lg shadow-md bg-tartiary">
+                                    <img src="./assets/certificates/Cert21374017330-1.jpg" alt="Product Design" class="w-full rounded-t-lg">
+        
+                                    <div class="p-6 text-center rounded-b-lg">
+                                        <p class="text-primary text-lg font-semibold leading-none">Cisco Certified Suport Technician Cybersecurity</p>
+                                        <small class="text-gray-700 italic">Issuer: Certiport</small>
+                                    </div>
+                                </div>
+        
+                                <div class="flex-shrink-0 w-[17.5em] rounded-lg shadow-md bg-tartiary">
+                                    <img src="./assets/certificates/Cert40474095-1.jpg" alt="Product Design" class="w-full rounded-t-lg">
+        
+                                    <div class="px-5 py-7 text-center rounded-b-lg">
+                                        <p class="text-primary text-lg font-semibold">ITS - Networking</p>
+                                        <small class="text-gray-700 italic">Issuer: Certiport</small>
+                                    </div>
+                                </div>
+        
+                                <div class="flex-shrink-0 w-[17.5em] rounded-lg shadow-md bg-tartiary">
+                                    <img src="./assets/certificates/Cert54373949168-1.jpg" alt="Product Design" class="w-full rounded-t-lg">
+        
+                                    <div class="px-5 py-7 text-center rounded-b-lg">
+                                        <p class="text-primary text-lg font-semibold">ITS - Cybersecrity</p>
+                                        <small class="text-gray-700 italic">Issuer: Certiport</small>
+                                    </div>
+                                </div>
+        
+                                <div class="flex-shrink-0 w-[17.5em] rounded-lg shadow-md bg-tartiary">
+                                    <img src="./assets/certificates/Cert54373949168-1.jpg" alt="Product Design" class="w-full rounded-t-lg">
+                                    
+                                    <div class="px-5 py-7 text-center rounded-b-lg">
+                                        <p class="text-primary text-lg font-semibold">ITS - Cybersecrity</p>
+                                        <small class="text-gray-700 italic">Issuer: Certiport</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="flex mt-4 gap-1">
+                            <button x-on:click="activeSlide = 0"
+                                    x-bind:class="{ 'bg-tartiary': activeSlide === 0, 'bg-opacity-50': activeSlide !== 0 }"
+                                    class="w-5 h-5 rounded-full relative focus:outline-none">
+        
+                                <span class="absolute inset-0 m-auto w-3 h-3 bg-primary rounded-full transition-opacity duration-300"></span>
+                            </button>
+        
+                            <button x-on:click="activeSlide = 1"
+                                x-bind:class="{ 'bg-tartiary': activeSlide === 1, 'bg-opacity-50': activeSlide !== 1 }"
+                                    class="w-5 h-5 rounded-full relative focus:outline-none">
+        
+                                <span class="absolute inset-0 m-auto w-3 h-3 bg-primary rounded-full transition-opacity duration-300"></span>
+                            </button>
+                            
+                            <button x-on:click="activeSlide = 2"
+                                x-bind:class="{ 'bg-tartiary': activeSlide === 2, 'bg-opacity-50': activeSlide !== 2 }"
+                                    class="w-5 h-5 rounded-full relative focus:outline-none">
+        
+                                <span class="absolute inset-0 m-auto w-3 h-3 bg-primary rounded-full transition-opacity duration-300"></span>
+                            </button>
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certificates Section -->
+    <section class="w-screen h-full relative">
+        <div class="bg absolute w-full h-full -z-10"></div>
+
+        <div class="container mx-auto h-full px-5 flex flex-col max-md:gap-10 items-center justify-start py-20">
+            <!-- Header -->
+            <div class="flex items-center justify-center relative">
+                <p class="text-4xl font-extrabold z-0">MY CERTIFICATES</p>
+            </div>
+
+            <!-- Content -->
+            <div class="flex max-lg:flex-col items-stretch justify-center flex-wrap gap-5 mt-10">
+                <div class="shadow-lg rounded w-[400px] bg-white border">
+                    <img src="./assets/certificates/Cert21374017330-1.jpg" alt="" class="w-full border-b">
+
+                    <div class="text-center p-5">
+                        <p class="text-lg text-wrap font-semibold leading-none">Cisco Certified Support Technician Cybersecurity</p>
+                        <small class="block italic mt-1">Issuer: Certiport</small>
+                        <a class="underline underline-offset-2" href="https://www.credly.com/badges/8fc3076e-ada6-4b8f-b5dd-b1b7e444932c/public_url">View</a>
+                    </div>
+                </div>
+
+                <div class="shadow-lg rounded w-[400px] bg-white border">
+                    <img src="./assets/certificates/Cert2667401288-1.jpg" alt="" class="w-full border-b">
+
+                    <div class="text-center p-5">
+                        <p class="text-xl text-wrap font-semibold leading-none">IT Specialist - Network Security</p>
+                        <small class="block italic mt-1">Issuer: Certiport</small>
+                        <a class="underline underline-offset-2" href="https://www.credly.com/badges/4671a646-c61a-4831-a4e1-ec350ffbc424/public_url">View</a>
+                    </div>
+                </div>
+
+                <div class="shadow-lg rounded w-[400px] bg-white border">
+                    <img src="./assets/certificates/Cert40474095-1.jpg" alt="" class="w-full border-b">
+
+                    <div class="text-center p-5">
+                        <p class="text-xl text-wrap font-semibold leading-none">IT Specialist - Networking</p>
+                        <small class="block italic mt-1">Issuer: Certiport</small>
+                        <a class="underline underline-offset-2" href="https://www.credly.com/badges/5828e3d1-ad23-4112-9556-f4e1794e1a27/public_url">View</a>
+                    </div>
+                </div>
+
+                <div class="shadow-lg rounded w-[400px] bg-white border">
+                    <img src="./assets/certificates/Cert54373949168-1.jpg" alt="" class="w-full border-b">
+
+                    <div class="text-center p-5">
+                        <p class="text-xl text-wrap font-semibold leading-none">IT Specialist - Cybersecurity</p>
+                        <small class="block italic mt-1">Issuer: Certiport</small>
+                        <a class="underline underline-offset-2" href="https://www.credly.com/badges/48659aaa-781b-4590-8efa-16aa80d915c2/public_url">View</a>
+                    </div>
                 </div>
             </div>
         </div>
