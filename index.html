@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class="scroll-smooth" lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,7 +13,7 @@
     x-data="{
         isOpen: false
     }">
-    <header class="w-screen sticky h-[80px] border border-b">
+    <header class="w-screen top-0 fixed h-[80px] border border-b z-[99] bg-white shadow-lg">
         <nav class="container h-full mx-auto flex items-center justify-between px-5">
             <!-- Logo -->
             <div>
@@ -22,7 +22,7 @@
 
             <!-- Navs -->
             <div class="flex items-center justify-center gap-5 h-full">
-                <ul class="hidden sm:flex h-full flex-row items-center font-semibold text-md cursor-pointer">
+                <ul class="hidden sm:flex h-full flex-row items-center text-md cursor-pointer">
                     <li class="h-full flex items-center justify-center w-28 hover:border-b-2 hover:font-bold border-blue-950">Home</li>
                     <li class="h-full flex items-center justify-center w-28 hover:border-b-2 hover:font-bold border-blue-950">About Me</li>
                     <li class="h-full flex items-center justify-center w-28 hover:border-b-2 hover:font-bold border-blue-950">Projects</li>
@@ -46,7 +46,7 @@
     </header>
 
     <!-- Hero Section -->
-    <section class="w-screen md:h-[calc(100vh-80px)] relative">
+    <section class="w-screen md:h-[calc(100vh-80px)] mt-[80px] relative">
         <div class="bg absolute w-full h-full -z-10"></div>
 
         <div class="container mx-auto h-full px-5 flex max-md:flex-col max-md:gap-10 items-center justify-center">
@@ -163,9 +163,9 @@
                     </p>
                     
                     <div class="flex items-center justify-start max-md:justify-center md:flex-col md:items-stretch lg:flex-row lg:items-center gap-3 mt-3">
-                        <button class="transition-all px-10 py-2.5 font-medium bg-primary text-white hover:bg-blue-900 rounded-md">
+                        <!-- <button class="transition-all px-10 py-2.5 font-medium bg-primary text-white hover:bg-blue-900 rounded-md">
                             Hire Me
-                        </button>
+                        </button> -->
 
                         <button class="flex items-center justify-center gap-3 transition-all px-10 py-2 font-medium outline outline-primary text-primary hover:bg-secondary hover:outline-secondary hover:text-white rounded-md">
                             <svg class="feather feather-download" fill="none" height="24" stroke="currentColor"
