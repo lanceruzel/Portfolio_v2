@@ -232,7 +232,7 @@
 
             <!-- Content -->
             <div x-data="certificatesData()" class="container mx-auto">
-                <div class="flex max-lg:flex-col items-center justify-center flex-wrap gap-5 md:mt-10">
+                <div class="flex max-lg:flex-col items-center lg:items-stretch justify-center flex-wrap gap-5 md:mt-10">
                     <template x-for="cert in certificates" :key="cert.id">
                         <div class="shadow-lg rounded w-[400px] bg-white border overflow-hidden hover:scale-105 transition-all cursor-pointer" @click="openModal(cert)">
                             <img :src="cert.image" :alt="cert.title" class="w-full border-b">

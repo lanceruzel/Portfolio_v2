@@ -1682,6 +1682,10 @@ video {
     align-items: center;
   }
 
+  .lg\:items-stretch{
+    align-items: stretch;
+  }
+
   .lg\:gap-16{
     gap: 4rem;
   }
