@@ -7,13 +7,16 @@
     <link href="./css/output.css" rel="stylesheet">
     <link href="./css/hamburger.css" rel="stylesheet">
     <link href="./css/general.css" rel="stylesheet">
+
     <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/8d74841f8f.js" crossorigin="anonymous"></script>
 </head>
 <body class="m-0 p-0 overflow-x-hidden text-gray-700 roboto-regular" 
     x-data="{
         isOpen: false
     }">
-    <header class="w-screen top-0 fixed h-[80px] border border-b z-[99] bg-white shadow-lg">
+    <header class="w-screen top-0 fixed h-[80px] border-b z-[99] bg-white" id="navbar">
         <nav class="container h-full mx-auto flex items-center justify-between px-5">
             <!-- Logo -->
             <div>
@@ -23,10 +26,10 @@
             <!-- Navs -->
             <div class="flex items-center justify-center gap-5 h-full">
                 <ul class="hidden sm:flex h-full flex-row items-center text-md cursor-pointer">
-                    <li class="h-full flex items-center justify-center w-28 hover:border-b-2 hover:font-bold border-blue-950">Home</li>
-                    <li class="h-full flex items-center justify-center w-28 hover:border-b-2 hover:font-bold border-blue-950">About Me</li>
-                    <li class="h-full flex items-center justify-center w-28 hover:border-b-2 hover:font-bold border-blue-950">Projects</li>
-                    <li class="h-full flex items-center justify-center w-28 hover:border-b-2 hover:font-bold border-blue-950">Contact</li>
+                    <li class="h-full transition-all flex items-center justify-center w-28 hover:border-b-4 hover:font-bold border-blue-950">Home</li>
+                    <li class="h-full transition-all flex items-center justify-center w-28 hover:border-b-4 hover:font-bold border-blue-950">About Me</li>
+                    <li class="h-full transition-all flex items-center justify-center w-28 hover:border-b-4 hover:font-bold border-blue-950">Projects</li>
+                    <li class="h-full transition-all flex items-center justify-center w-28 hover:border-b-4 hover:font-bold border-blue-950">Contact</li>
                 </ul>
 
                 <!-- <button class="transition-all hidden md:block px-10 py-2.5 font-semibold bg-primary text-white hover:bg-blue-900 rounded-md">
@@ -49,7 +52,7 @@
     <section class="w-screen md:h-[calc(100vh-80px)] mt-[80px] relative">
         <div class="bg absolute w-full h-full -z-10"></div>
 
-        <div class="container mx-auto h-full px-5 flex max-md:flex-col max-md:gap-10 items-center justify-center">
+        <div class="container mx-auto h-full px-5 flex max-md:pt-24 max-md:flex-col max-md:gap-10 items-center justify-center">
             <!-- Right Side -->
             <div class="!w-full max-md:text-center">
                 <div class="flex items-center max-md:justify-center gap-2 max-md:pt-10">
@@ -363,6 +366,119 @@
         </div>
     </section>
 
+    <!-- Contact Section -->
+    <section class="w-screen h-full relative">
+        <div class="bg absolute w-full h-full -z-10"></div>
+
+        <div class="container mx-auto h-full px-5 flex flex-col items-center justify-start py-20">
+            <!-- Header -->
+            <div class="flex items-center justify-center relative">
+                <p class="text-4xl font-extrabold z-0">GET IN TOUCH</p>
+            </div>
+
+            <!-- Content -->
+            <div class="mt-5">
+                <p class="text-xl text-center">I am currently open to exploring new opportunities and collaborations. 
+                    Whether you have a project idea, a potential partnership, or just want to connect, feel free to reach out. 
+                    I'm excited about the possibility of new ventures and look forward to hearing from you.</p>
+
+                <div class="grid grid-cols-12 gap-5 mt-10">
+                    <div class="col-span-12 md:col-span-4">
+                        <h3 class="text-2xl font-bold max-md:text-center">Contact Info</h3>
+                    
+                        <div class="flex flex-col max-md:items-center items-start justify-center gap-4 mt-2.5">
+                            <div class="text-lg">
+                                <i class="fa-solid fa-location-dot me-2" aria-hidden="true"></i>
+                                <span>Bataan, Philippines</span>
+                            </div>
+    
+                            <div class="text-lg gap-2">
+                                <i class="fa-solid fa-envelope me-2" aria-hidden="true"></i>
+                                <span>lanceruzel2@gmail.com</span>
+                            </div>
+                            
+                            <div class="text-lg gap-2">
+                                <i class="fa-solid fa-phone me-2" aria-hidden="true"></i>
+                                <span>+63-920-5524-353</span>
+                            </div>
+    
+                            <div class="text-lg gap-2">
+                                <i class="fa-solid fa-globe me-2" aria-hidden="true"></i>
+                                <span>lanceruzel.tech</span>
+                            </div>
+                        </div>
+
+                        <div class="mt-5">
+                            <h3 class="text-2xl font-bold max-md:text-center">Follow Me</h3>
+                            
+                            <div class="flex items-center max-md:justify-center justify-start gap-4 mt-2.5">
+                                <img class="size-8 transition-all hover:scale-110" src="/assets/icons/facebook.svg" alt="">
+                                <img class="size-8 transition-all hover:scale-110" src="/assets/icons/github.svg" alt="">
+                                <img class="size-8 transition-all hover:scale-110" src="/assets/icons/linkedin.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+
+                    <form action="" class="col-span-12 md:col-span-8 w-full grid grid-cols-2 gap-5">
+                        <h2 class="text-2xl font-semibold col-span-2 max-md:text-center max-md:mt-10">Want to send a message?</h2>
+
+                        <!-- Name -->
+                        <div class="col-span-2">
+                            <label for="name" class="block text-md font-medium text-gray-900">Name</label>
+                            
+                            <div>
+                                <input type="text" name="name" autocomplete="name" required class="block w-full rounded-md bg-white px-4 py-2 text-md text-gray-700 outline outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline focus:outline-2 focus:-outline-offset-2 focus:outline-primary">
+                            </div>
+                        </div>
+
+                        <!-- Phone Number -->
+                        <div>
+                            <label for="phonenumber" class="block text-md font-medium text-gray-900">Phone Number</label>
+                            
+                            <div>
+                                <input type="tel" name="phonenumber" autocomplete="phonenumber" required class="block w-full rounded-md bg-white px-4 py-2 text-md text-gray-700 outline outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline focus:outline-2 focus:-outline-offset-2 focus:outline-primary">
+                            </div>
+                        </div>
+
+                        <!-- Email -->
+                        <div>
+                            <label for="email" class="block text-md font-medium text-gray-900">Email address</label>
+                            
+                            <div>
+                                <input type="email" name="email" autocomplete="email" required class="block w-full rounded-md bg-white px-4 py-2 text-md text-gray-700 outline outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline focus:outline-2 focus:-outline-offset-2 focus:outline-primary">
+                                <p class="text-gray-500 mt-1 float-end">Please ensure that the email you enter is valid.</p>
+                            </div>
+                        </div>
+
+                        <!-- Message -->
+                        <div class="col-span-2">
+                            <label for="message" class="block text-md font-medium text-gray-900">Message</label>
+                            
+                            <div>
+                                <textarea rows="5" name="message" class="block w-full rounded-md bg-white px-4 py-2 text-md text-gray-700 outline outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline focus:outline-2 focus:-outline-offset-2 focus:outline-primary" required></textarea>
+                            </div>
+                        </div>
+
+                        <div class="col-span-2 flex items-center justify-end">
+                            <button class="transition-all px-10 py-2.5 font-medium bg-primary text-white hover:bg-secondary rounded-md">
+                                Send Message 
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <section class="w-screen h-full relative bg-primary">
+        <div class="bg absolute w-full h-full -z-10"></div>
+
+        <div class="container mx-auto h-full px-5 flex flex-col items-center justify-start py-12">
+            <p class="font-light text-white">Copyright © 2024 lanceruzel.tech</p>
+        </div>
+    </section>
+
     <script>
         function certificatesData() {
             return {
@@ -414,6 +530,17 @@
                 }
             }
         }
+
+        window.addEventListener('scroll', () => {
+            const scrollY = window.scrollY;
+
+            //Navbar shadow effect when scrolled down
+            if(scrollY > 1){ 
+                $('#navbar').addClass('shadow-lg');
+            }else{
+                $('#navbar').removeClass('shadow-lg');
+            }
+        });
     </script>
 </body>
 </html>
