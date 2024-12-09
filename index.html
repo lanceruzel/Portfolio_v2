@@ -245,7 +245,7 @@
                 </div>
         
                 <!-- Modal -->
-                <div x-show="isModalOpen" class="fixed inset-0 z-50 overflow-auto bg-black bg-opacity-50 flex items-center justify-center" x-on:click.self="closeModal()">
+                <div x-show="isModalOpen" class="fixed inset-0 z-[99] overflow-auto bg-black bg-opacity-50 flex items-center justify-center" x-on:click.self="closeModal()">
                     <div class="bg-white p-6 rounded-lg max-w-3xl w-full mx-4 relative overflow-hidden">
                         <button x-on:click="closeModal()" class="absolute top-0 right-0 p-3 hover:scale-125 transition-all">
                             <svg class="size-5 stroke-primary" height="512px" id="Layer_1" version="1.1" viewBox="0 0 512 512" width="512px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M437.5,386.6L306.9,256l130.6-130.6c14.1-14.1,14.1-36.8,0-50.9c-14.1-14.1-36.8-14.1-50.9,0L256,205.1L125.4,74.5  c-14.1-14.1-36.8-14.1-50.9,0c-14.1,14.1-14.1,36.8,0,50.9L205.1,256L74.5,386.6c-14.1,14.1-14.1,36.8,0,50.9  c14.1,14.1,36.8,14.1,50.9,0L256,306.9l130.6,130.6c14.1,14.1,36.8,14.1,50.9,0C451.5,423.4,451.5,400.6,437.5,386.6z"/></svg>
@@ -278,11 +278,12 @@
 
             <!-- Content -->
             <div class="flex max-lg:flex-col items-stretch justify-center flex-wrap gap-5 md:mt-10">
-                <div class="shadow-lg rounded w-[400px] bg-white border overflow-hidden relative">
-                    <img src="./assets/certificates/Cert21374017330-1.jpg" alt="" class="w-full border-b">
+                <div class="transition-all group shadow-lg rounded w-[400px] bg-white border overflow-hidden relative">
+                    <img src="./assets/certificates/Cert21374017330-1.jpg" alt="" class="w-full border-b transition-all group-hover:blur-sm">
 
-                    <div class="absolute flex items-center justify-center hover:">
-                        dsdadsa
+                    <div class="transition-all group-hover:translate-y-full bg-primary/80 text-white absolute -top-full h-full w-full flex flex-col items-center justify-center">
+                        <p class="text-xl">GlobeConnect</p>
+                        <p>A social commerce </p>
                     </div>
                 </div>
             </div>
