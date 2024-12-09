@@ -12,7 +12,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="https://kit.fontawesome.com/8d74841f8f.js" crossorigin="anonymous"></script>
 </head>
-<body class="m-0 p-0 overflow-x-hidden text-gray-700 roboto-regular" 
+<body class="m-0 p-0 overflow-x-hidden text-gray-700 roboto-regular relative" 
     x-data="{
         isOpen: false
     }">
@@ -47,6 +47,15 @@
             </div>
         </nav>
     </header>
+
+    <div x-show="isOpen" x-transition class="fixed sm:hidden w-full h-screen bg-white z-[99]">
+        <ul class="flex flex-col items-center justify-start h-full text-md cursor-pointer mt-5">
+            <li class="w-28 h-[60px] transition-all flex items-center justify-center hover:border-b-4 hover:font-bold border-blue-950">Home</li>
+            <li class="w-28 h-[60px] transition-all flex items-center justify-center hover:border-b-4 hover:font-bold border-blue-950">About Me</li>
+            <li class="w-28 h-[60px] transition-all flex items-center justify-center hover:border-b-4 hover:font-bold border-blue-950">Projects</li>
+            <li class="w-28 h-[60px] transition-all flex items-center justify-center hover:border-b-4 hover:font-bold border-blue-950">Contact</li>
+        </ul>
+    </div>
 
     <!-- Hero Section -->
     <section class="w-screen md:h-[calc(100vh-80px)] mt-[80px] relative">
@@ -349,7 +358,7 @@
 
                 <div class="grid grid-cols-12 gap-5 mt-10">
                     <div class="col-span-12 md:col-span-4">
-                        <h3 class="text-2xl font-bold max-md:text-center">Contact Info</h3>
+                        <h3 class="text-2xl font-semibold max-md:text-center">Contact Info</h3>
                     
                         <div class="flex flex-col max-md:items-center items-start justify-center gap-4 mt-2.5">
                             <div class="text-lg">
@@ -397,7 +406,7 @@
                         </div>
 
                         <!-- Phone Number -->
-                        <div>
+                        <div class="max-sm:col-span-2">
                             <label for="phonenumber" class="block text-md">Phone Number</label>
                             
                             <div>
@@ -406,7 +415,7 @@
                         </div>
 
                         <!-- Email -->
-                        <div>
+                        <div class="max-sm:col-span-2">
                             <label for="email" class="block text-md">Email address</label>
                             
                             <div>
