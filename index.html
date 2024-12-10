@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lance Ruzel</title>
+    <title>Lance Ruzel's Portfolio</title>
     <link href="./css/output.css" rel="stylesheet">
     <link href="./css/hamburger.css" rel="stylesheet">
     <link href="./css/general.css" rel="stylesheet">
@@ -95,13 +95,13 @@
                 <p class="text-2xl mt-3 font-medium">Dedicated to crafting dynamic, user-friendly, and innovative websites. I specialize in creating responsive designs and efficient backend systems to deliver impactful digital experiences.</p>
             
                 <div class="flex items-center justify-center md:justify-start gap-3 mt-5">
-                    <button class="transition-all px-10 py-2.5 font-medium bg-primary text-white hover:bg-secondary rounded-md">
+                    <a href="#projects" class="transition-all px-10 py-2.5 font-medium bg-primary text-white hover:bg-secondary rounded-md">
                         Projects
-                    </button>
+                    </a>
 
-                    <button class="transition-all px-10 py-2 font-medium outline outline-primary text-primary hover:bg-secondary hover:outline-secondary hover:text-white rounded-md">
+                    <a href="https://www.linkedin.com/in/lance-ruzel-ambrocio-955468274/" target="_blank" class="transition-all px-10 py-2 font-medium outline outline-primary text-primary hover:bg-secondary hover:outline-secondary hover:text-white rounded-md">
                         Linkedin
-                    </button>
+                    </a>
                 </div>
             </div>
 
@@ -404,14 +404,22 @@
                             <h3 class="text-2xl font-bold max-md:text-center">Follow Me</h3>
                             
                             <div class="flex items-center max-md:justify-center justify-start gap-4 mt-2.5">
-                                <img class="size-8 transition-all hover:scale-110" src="/assets/icons/facebook.svg" alt="">
-                                <img class="size-8 transition-all hover:scale-110" src="/assets/icons/github.svg" alt="">
-                                <img class="size-8 transition-all hover:scale-110" src="/assets/icons/linkedin.svg" alt="">
+                                <a href="https://www.facebook.com/ruzelance" target="_blank">
+                                    <img class="size-8 transition-all hover:scale-110" src="/assets/icons/facebook.svg" alt="">
+                                </a>
+
+                                <a href="https://github.com/lanceruzel" target="_blank">
+                                    <img class="size-8 transition-all hover:scale-110" src="/assets/icons/github.svg" alt="">
+                                </a>
+
+                                <a href="https://www.linkedin.com/in/lance-ruzel-ambrocio-955468274/" target="_blank">
+                                    <img class="size-8 transition-all hover:scale-110" src="/assets/icons/linkedin.svg" alt="">
+                                </a>
                             </div>
                         </div>
                     </div>
 
-                    <form action="" class="col-span-12 md:col-span-8 w-full grid grid-cols-2 gap-5">
+                    <form class="col-span-12 md:col-span-8 w-full grid grid-cols-2 gap-5" id="email_form">
                         <h2 class="text-2xl font-semibold col-span-2 max-md:text-center max-md:mt-10">Want to send a message?</h2>
 
                         <!-- Name -->
@@ -425,10 +433,10 @@
 
                         <!-- Phone Number -->
                         <div class="max-sm:col-span-2">
-                            <label for="phonenumber" class="block text-md">Phone Number</label>
+                            <label for="phone_number" class="block text-md">Phone Number</label>
                             
                             <div>
-                                <input type="tel" name="phonenumber" autocomplete="phonenumber" required class="block w-full rounded-md bg-white px-4 py-2 text-md text-gray-700 outline outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline focus:outline-2 focus:-outline-offset-2 focus:outline-primary">
+                                <input type="tel" name="phone_number" autocomplete="phonenumber" required class="block w-full rounded-md bg-white px-4 py-2 text-md text-gray-700 outline outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline focus:outline-2 focus:-outline-offset-2 focus:outline-primary">
                             </div>
                         </div>
 
@@ -439,6 +447,10 @@
                             <div>
                                 <input type="email" name="email" autocomplete="email" required class="block w-full rounded-md bg-white px-4 py-2 text-md text-gray-700 outline outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline focus:outline-2 focus:-outline-offset-2 focus:outline-primary">
                                 <p class="text-gray-500 mt-1 float-end">Please ensure that the email you enter is valid.</p>
+                            </div>
+
+                            <div class="text-red-500 hidden" id="email_invalid">
+                                Please enter a valid email.
                             </div>
                         </div>
 
@@ -452,9 +464,7 @@
                         </div>
 
                         <div class="col-span-2 flex items-center justify-end">
-                            <button class="transition-all px-10 py-2.5 font-medium bg-primary text-white hover:bg-secondary rounded-md">
-                                Send Message 
-                            </button>
+                            <input type="submit" value="Send Message" name="send" class="transition-all px-10 py-2.5 font-medium bg-primary text-white hover:bg-secondary rounded-md" />
                         </div>
                     </form>
                 </div>
@@ -471,176 +481,8 @@
         </div>
     </section>
 
-    <script>
-        function certificatesData() {
-            return {
-                isModalOpen: false,
-                selectedCert: {},
-                certificates: [
-                    {
-                        id: 1,
-                        title: "IT Specialist - Device Configuration and Management",
-                        issuer: "Certiport",
-                        image: "./assets/certificates/Cert10192854592-1.jpg",
-                        link: "https://www.credly.com/badges/0b3d7bd8-e2d2-4544-8810-abc6ef076e7e/public_url"
-                    },
-                    {
-                        id: 2,
-                        title: "IT Specialist - Networking",
-                        issuer: "Certiport",
-                        image: "./assets/certificates/Cert40474095-1.jpg",
-                        link: "https://www.credly.com/badges/5828e3d1-ad23-4112-9556-f4e1794e1a27/public_url"
-                    },
-                    {
-                        id: 3,
-                        title: "IT Specialist - Network Security",
-                        issuer: "Certiport",
-                        image: "./assets/certificates/Cert2667401288-1.jpg",
-                        link: "https://www.credly.com/badges/4671a646-c61a-4831-a4e1-ec350ffbc424/public_url"
-                    },
-                    {
-                        id: 4,
-                        title: "Cisco Certified Support Technician Cybersecurity",
-                        issuer: "Certiport",
-                        image: "./assets/certificates/Cert21374017330-1.jpg",
-                        link: "https://www.credly.com/badges/8fc3076e-ada6-4b8f-b5dd-b1b7e444932c/public_url"
-                    },
-                    {
-                        id: 5,
-                        title: "IT Specialist - Cybersecurity",
-                        issuer: "Certiport",
-                        image: "./assets/certificates/Cert54373949168-1.jpg",
-                        link: "https://www.credly.com/badges/48659aaa-781b-4590-8efa-16aa80d915c2/public_url"
-                    }
-                ],
-                openModal(cert) {
-                    this.selectedCert = cert;
-                    this.isModalOpen = true;
-                },
-                closeModal() {
-                    this.isModalOpen = false;
-                }
-            }
-        }
-
-        function carouselData() {
-            return {
-                modalOpen: false,
-                selectedProject: null,
-                modalCurrentIndex: 0,
-                projects: [
-                    {
-                        id: 1,
-                        name: "GlobeConnect",
-                        description: "A social commerce website enabling multi-merchant product sales, real-time livestreaming, shopping, and secure online payments via PayPal",
-                        images: [],
-                        imageFolder: "./assets/Projects/GlobeConnect/",
-                        stacks: ["Tailwind CSS", "JavaScript", "Alpine.js", "Laravel", "Livewire"]
-                    },
-                    {
-                        id: 2,
-                        name: "Dormitory Management System",
-                        description: "A personal project designed to streamline dormitory operations with features for account management, student registration, room assignments, inventory tracking, and bill/payment management.",
-                        images: [],
-                        imageFolder: "./assets/Projects/Dormitory/",
-                        stacks: ["Bootstrap 5", "Javascript", "Laravel", "Livewire"]
-                    },
-                    {
-                        id: 3,
-                        name: "Restaurant Management System",
-                        description: "A management system featuring account, menu, order, table, and bill management, along with a simple POS for streamlined restaurant operations.",
-                        images: [],
-                        imageFolder: "./assets/Projects/Restaurant/",
-                        stacks: ["Bootstrap 5", "JavaScript", "jQuery", "Laravel"]
-                    },
-                ],
-                init() {
-                    this.loadProjectImages();
-                },
-                loadProjectImages() {
-                    this.projects.forEach(project => {
-                        this.loadImagesForProject(project);
-                    });
-                },
-                loadImagesForProject(project) {
-                    const loadImage = (index) => {
-                        const img = new Image();
-                        img.onload = () => {
-                            project.images.push(img.src);
-                            loadImage(index + 1);
-                        };
-                        img.onerror = () => {
-                            if (project.images.length === 0) {
-                                project.images.push('/placeholder.svg?height=300&width=300');
-                            }
-                        };
-                        img.src = `${project.imageFolder}${index}.png`;
-                    };
-                    
-                    loadImage(1);
-                },
-                openModal(project) {
-                    this.selectedProject = project;
-                    this.modalOpen = true;
-                    this.modalCurrentIndex = 0;
-                },
-                closeModal() {
-                    this.modalOpen = false;
-                    //this.selectedProject = null;
-                },
-                nextModalImage() {
-                    if (this.modalCurrentIndex < this.selectedProject.images.length - 1) {
-                        this.modalCurrentIndex++;
-                    }
-                },
-                prevModalImage() {
-                    if (this.modalCurrentIndex > 0) {
-                        this.modalCurrentIndex--;
-                    }
-                }
-            };
-        }
-
-        let links = $('.nav-item');
-        let sections = $('section');
-
-        window.addEventListener('scroll', () => {
-            const scrollY = window.scrollY;
-
-            //Navbar Item Select
-            let viewportHeight = window.innerHeight;
-
-            sections.each(function () {
-                let section = this;
-                let top = window.scrollY;
-                let offset = section.offsetTop - (viewportHeight / 2.5);
-                let height = section.offsetHeight;
-                let id = section.getAttribute('id');
-    
-                if (top >= offset && top < offset + height) {
-                    links.removeClass("border-b-4 font-bold");
-    
-                    let targetLink = $('.nav-item a[href="#' + id + '"]');
-    
-                    if (targetLink.length > 0) {
-                        targetLink.each(function () {
-                            let parentElement = $(this).parent();
-    
-                            if (parentElement.length > 0) {
-                                parentElement.addClass("border-b-4 font-bold");
-                            }
-                        });
-                    }
-                }
-            });
-
-            //Navbar shadow effect when scrolled down
-            if(scrollY > 1){ 
-                $('#navbar').addClass('shadow-lg');
-            }else{
-                $('#navbar').removeClass('shadow-lg');
-            }
-        });
-    </script>
+    <script src="./scripts/data.js"></script>
+    <script src="./scripts/scrollbar.js"></script>
+    <script src="./scripts/email.js"></script>
 </body>
 </html>
