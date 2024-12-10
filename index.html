@@ -94,7 +94,7 @@
                 </div>
                 
                 <p class="max-sm:text-3xl text-4xl font-bold">I’m <span class="text-secondary font-extrabold max-sm:text-4xl text-5xl">Lance Ruzel Ambrocio</span> a Fullstack Web Developer. <span class="-ms-2 animate-pulse text-gray-400">|</span></p>
-                <p class="text-2xl mt-3 font-medium">Dedicated to crafting dynamic, user-friendly, and innovative websites. I specialize in creating responsive designs and efficient backend systems to deliver impactful digital experiences.</p>
+                <p class="max-sm:text-lg text-2xl mt-3 font-medium">Dedicated to crafting dynamic, user-friendly, and innovative websites. I specialize in creating responsive designs and efficient backend systems to deliver impactful digital experiences.</p>
             
                 <div class="flex items-center justify-center md:justify-start gap-3 mt-5">
                     <a href="#projects" class="transition-all px-10 py-2.5 font-medium bg-primary text-white hover:bg-secondary rounded-md">
@@ -165,7 +165,7 @@
     </section>
 
     <!-- About Me Section -->
-    <section class="w-screen h-full relative" id="about-me">
+    <section class="w-screen h-full relative overflow-hidden" id="about-me">
         <div class="bg absolute w-full h-full -z-10"></div>
 
         <div class="container mx-auto h-full px-5 flex flex-col max-md:gap-10 items-center justify-start pt-32">
@@ -185,13 +185,13 @@
             <div class="flex max-lg:flex-col items-center justify-center gap-10 lg:gap-16">
                 <!-- Left Side -->
                 <div class="relative md:mt-10">
-                    <img src="./assets/IMG_3962.JPG" alt="" class="shadow-lg rounded z-[100] object-cover h-[380px] min-h-[380px] w-[380px] min-w-[380px]">
-                    <div class="shadow-lg rounded -z-10 absolute -top-5 right-5 bg-secondary h-[380px] min-h-[380px] w-[380px] min-w-[380px]"></div>
-                    <div class="shadow-lg rounded -z-10 absolute -bottom-5 -right-5 bg-tartiary h-[380px] min-h-[380px] w-[380px] min-w-[380px]"></div>
+                    <img src="./assets/IMG_3962.JPG" alt="" class="shadow-lg rounded z-[100] object-cover max-sm:h-[350px] max-sm:w-[350px] h-[380px] max-sm:min-h-[350px] min-h-[380px] w-[380px] max-sm:min-w-[350px] min-w-[380px]">
+                    <div class="shadow-lg rounded -z-10 absolute -top-5 right-5 bg-secondary max-sm:h-[350px] max-sm:w-[350px] h-[380px] min-h-[350px] w-[380px] min-w-[350px]"></div>
+                    <div class="shadow-lg rounded -z-10 absolute -bottom-5 -right-5 bg-tartiary max-sm:h-[350px] max-sm:w-[350px] h-[380px] min-h-[350px] w-[380px] min-w-[350px]"></div>
                 </div>
 
                 <div class="lg:mt-5">
-                    <p class="text-xl max-lg:text-center">
+                    <p class="max-sm:text-base max-sm:px-2.5 text-xl max-lg:text-center">
                         I’m a passionate web developer with a strong focus on the TALL stack (Tailwind, AlpineJS, Laravel, Livewire) and Vue.js. 
                         I thrive on the challenge of fixing bugs and errors, ensuring seamless functionality and optimal performance in every project. 
                         My expertise spans PHP, MySQL, and JavaScript, and I enjoy integrating third-party APIs to enhance application features and user experience. 
@@ -252,20 +252,21 @@
             </div>
 
             <!-- Certificates -->
-            <div class="px-5 flex flex-col max-md:gap-10 items-center justify-start pt-32">
+            <div class="flex flex-col max-md:gap-10 items-center justify-start pb-5 pt-32">
                 <!-- Header -->
                 <div class="flex items-center justify-center relative">
                     <p class="text-4xl font-extrabold z-0">CERTIFICATES</p>
                 </div>
     
                 <!-- Content -->
-                <div x-data="certificatesData()" class="container mx-auto">
+                <div x-data="certificatesData()">
                     <div class="flex max-lg:flex-col items-center lg:items-stretch justify-center flex-wrap gap-5 md:mt-10">
                         <template x-for="cert in certificates" x-bind:key="cert.id">
-                            <div class="shadow-lg hover:shadow-xl rounded w-[400px] bg-white border overflow-hidden hover:scale-105 transition-all cursor-pointer" x-on:click="openModal(cert)">
+                            <div class="shadow-lg hover:shadow-xl rounded max-sm:w-full w-[400px] max-w-[400px] bg-white border overflow-hidden hover:scale-105 transition-all cursor-pointer" x-on:click="openModal(cert)">
                                 <img x-bind:src="cert.image" x-bind:alt="cert.title" class="w-full border-b">
+                                
                                 <div class="text-center p-5">
-                                    <p class="text-xl text-wrap font-semibold leading-none" x-text="cert.title"></p>
+                                    <p class="max-sm:text-base text-xl text-wrap font-semibold leading-none" x-text="cert.title"></p>
                                     <small class="block italic mt-1" x-text="'Issuer: ' + cert.issuer"></small>
                                 </div>
                             </div>
@@ -273,7 +274,7 @@
                     </div>
             
                     <!-- Modal -->
-                    <div x-show="isModalOpen" class="fixed inset-0 z-[99] overflow-auto bg-black bg-opacity-50 flex items-center justify-center" x-on:click.self="closeModal()">
+                    <div x-show="isModalOpen" class="fixed inset-0 z-[99] overflow-hidden bg-black bg-opacity-50 flex items-center justify-center" x-on:click.self="closeModal()">
                         <div class="bg-white p-6 rounded-lg max-w-3xl w-full mx-4 relative overflow-hidden">
                             <button x-on:click="closeModal()" class="absolute top-0 right-0 p-3 hover:scale-125 transition-all">
                                 <svg class="size-5 stroke-primary" height="512px" id="Layer_1" version="1.1" viewBox="0 0 512 512" width="512px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M437.5,386.6L306.9,256l130.6-130.6c14.1-14.1,14.1-36.8,0-50.9c-14.1-14.1-36.8-14.1-50.9,0L256,205.1L125.4,74.5  c-14.1-14.1-36.8-14.1-50.9,0c-14.1,14.1-14.1,36.8,0,50.9L205.1,256L74.5,386.6c-14.1,14.1-14.1,36.8,0,50.9  c14.1,14.1,36.8,14.1,50.9,0L256,306.9l130.6,130.6c14.1,14.1,36.8,14.1,50.9,0C451.5,423.4,451.5,400.6,437.5,386.6z"/></svg>
@@ -303,10 +304,10 @@
             <h1 class="text-4xl font-extrabold text-center mb-8">PROJECTS</h1>
 
             <!-- Project Grid -->
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 p-3">
                 <template x-for="project in projects" x-bind:key="project.id">
-                    <div class="bg-white rounded-lg shadow-lg overflow-hidden transition-all hover:shadow-xl hover:scale-105">
-                        <img x-bind:src="project.images[0]" x-bind:alt="project.name" class="w-full h-48 object-cover cursor-pointer" x-on:click="openModal(project)">
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden transition-all hover:shadow-xl hover:scale-105 cursor-pointer" x-on:click="openModal(project)">
+                        <img x-bind:src="project.images[0]" x-bind:alt="project.name" class="w-full h-48 object-cover">
                         
                         <div class="p-6">
                             <h3 class="text-xl font-bold mb-2" x-text="project.name"></h3>
