@@ -1626,6 +1626,14 @@ video {
     padding-top: 2.5rem;
   }
 
+  .max-md\:pt-0{
+    padding-top: 0px;
+  }
+
+  .max-md\:pt-24{
+    padding-top: 6rem;
+  }
+
   .max-md\:text-center{
     text-align: center;
   }
@@ -1642,6 +1650,21 @@ video {
 
   .max-sm\:flex{
     display: flex;
+  }
+
+  .max-sm\:text-2xl{
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
+  .max-sm\:text-3xl{
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+  }
+
+  .max-sm\:text-4xl{
+    font-size: 2.25rem;
+    line-height: 2.5rem;
   }
 }
 
