@@ -61,23 +61,35 @@ function carouselData() {
                 description: "A social commerce website enabling multi-merchant product sales, real-time livestreaming, shopping, and secure online payments via PayPal",
                 images: [],
                 imageFolder: "./assets/Projects/GlobeConnect/",
-                stacks: ["Tailwind CSS", "JavaScript", "Alpine.js", "Laravel", "Livewire"]
+                stacks: ["Tailwind CSS", "JavaScript", "Alpine.js", "Laravel", "Livewire"],
+                link: '#'
             },
             {
                 id: 2,
+                name: "Taskflow",
+                description: "Taskflow is a simple task management tool built with Laravel and Vue.js. It allows users to add, update, and delete projects and tasks, with a smooth drag-and-drop feature for organizing tasks easily.",
+                images: [],
+                imageFolder: "./assets/Projects/Taskflow/",
+                stacks: ["Tailwind CSS", "JavaScript", "VueJs", "Laravel"],
+                link: 'task-flow.free.nf'
+            },
+            {
+                id: 3,
                 name: "Dormitory Management System",
                 description: "A personal project designed to streamline dormitory operations with features for account management, student registration, room assignments, inventory tracking, and bill/payment management.",
                 images: [],
                 imageFolder: "./assets/Projects/Dormitory/",
-                stacks: ["Bootstrap 5", "Javascript", "Laravel", "Livewire"]
+                stacks: ["Bootstrap 5", "Javascript", "Laravel", "Livewire"],
+                link: '#'
             },
             {
-                id: 3,
+                id: 4,
                 name: "Restaurant Management System",
                 description: "A management system featuring account, menu, order, table, and bill management, along with a simple POS for streamlined restaurant operations.",
                 images: [],
                 imageFolder: "./assets/Projects/Restaurant/",
-                stacks: ["Bootstrap 5", "JavaScript", "jQuery", "Laravel"]
+                stacks: ["Bootstrap 5", "JavaScript", "jQuery", "Laravel"],
+                link: '#'
             },
         ],
         init() {
