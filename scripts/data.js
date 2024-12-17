@@ -71,7 +71,7 @@ function carouselData() {
                 images: [],
                 imageFolder: "./assets/Projects/Taskflow/",
                 stacks: ["Tailwind CSS", "JavaScript", "VueJs", "Laravel"],
-                link: 'task-flow.free.nf'
+                link: 'http://task-flow.free.nf/'
             },
             {
                 id: 3,
