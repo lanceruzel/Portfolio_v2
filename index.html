@@ -357,11 +357,20 @@
                     <h2 class="text-2xl font-bold mt-4" x-text="selectedProject.name"></h2>
                     <p class="text-gray-600 mt-2" x-text="selectedProject.description"></p>
 
-                    <div x-show="selectedProject.link != '#'" class="flex items-center justify-end mt-5">
-                        <a class="underline underline-offset-2" x-bind:href="selectedProject.link" target="_blank">
-                            <i class="fa-solid fa-link"></i>
-                            Preview
-                        </a>
+                    <div class="flex items-center justify-center gap-3">
+                        <div x-show="selectedProject.githubLink != '#'" class="flex items-center justify-end mt-5">
+                            <a class="underline underline-offset-2" x-bind:href="selectedProject.githubLink" target="_blank">
+                                <i class="fa-solid fa-link"></i>
+                                Github
+                            </a>
+                        </div>
+
+                        <div x-show="selectedProject.link != '#'" class="flex items-center justify-end mt-5">
+                            <a class="underline underline-offset-2" x-bind:href="selectedProject.link" target="_blank">
+                                <i class="fa-solid fa-link"></i>
+                                Preview
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>

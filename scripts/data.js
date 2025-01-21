@@ -57,12 +57,13 @@ function carouselData() {
         projects: [
             {
                 id: 1,
-                name: "GlobeConnect",
-                description: "A social commerce website enabling multi-merchant product sales, real-time livestreaming, shopping, and secure online payments via PayPal",
+                name: "ShelterPaws",
+                description: "ShelterPaws is a web app for shelters to list pets for adoption and connect with adopters. Built with Vue.js and Laravel Sanctum, it offers secure CRUD functionality for managing pet profiles and adoption requests.",
                 images: [],
-                imageFolder: "./assets/Projects/GlobeConnect/",
-                stacks: ["Tailwind CSS", "JavaScript", "Alpine.js", "Laravel", "Livewire"],
-                link: '#'
+                imageFolder: "./assets/Projects/ShelterPaws/",
+                stacks: ["Tailwind CSS", "JavaScript", "VueJs", "Pinia", "Laravel Sanctum"],
+                link: '#',
+                githubLink: 'https://github.com/lanceruzel/ShelterPaws'
             },
             {
                 id: 2,
@@ -70,26 +71,39 @@ function carouselData() {
                 description: "Taskflow is a simple task management tool built with Laravel and Vue.js. It allows users to add, update, and delete projects and tasks, with a smooth drag-and-drop feature for organizing tasks easily.",
                 images: [],
                 imageFolder: "./assets/Projects/Taskflow/",
-                stacks: ["Tailwind CSS", "JavaScript", "VueJs", "Laravel"],
-                link: 'https://task-flow.free.nf/'
+                stacks: ["Tailwind CSS", "JavaScript", "VueJs", "Laravel Sanctum"],
+                link: '#',
+                githubLink: 'https://github.com/lanceruzel/TaskFlow'
             },
             {
                 id: 3,
+                name: "GlobeConnect",
+                description: "A social commerce website enabling multi-merchant product sales, real-time livestreaming, shopping, and secure online payments via PayPal",
+                images: [],
+                imageFolder: "./assets/Projects/GlobeConnect/",
+                stacks: ["Tailwind CSS", "JavaScript", "Alpine.js", "Laravel", "Livewire"],
+                link: '#',
+                githubLink: 'https://github.com/lanceruzel/CapstoneProject'
+            },
+            {
+                id: 4,
                 name: "Dormitory Management System",
                 description: "A personal project designed to streamline dormitory operations with features for account management, student registration, room assignments, inventory tracking, and bill/payment management.",
                 images: [],
                 imageFolder: "./assets/Projects/Dormitory/",
                 stacks: ["Bootstrap 5", "Javascript", "Laravel", "Livewire"],
-                link: '#'
+                link: '#',
+                githubLink: 'https://github.com/lanceruzel/DormitoryManagementSystem'
             },
             {
-                id: 4,
+                id: 5,
                 name: "Restaurant Management System",
                 description: "A management system featuring account, menu, order, table, and bill management, along with a simple POS for streamlined restaurant operations.",
                 images: [],
                 imageFolder: "./assets/Projects/Restaurant/",
                 stacks: ["Bootstrap 5", "JavaScript", "jQuery", "Laravel"],
-                link: '#'
+                link: '#',
+                githubLink: 'https://github.com/lanceruzel/RestaurantManagementSystem--Laravel-'
             },
         ],
         init() {
